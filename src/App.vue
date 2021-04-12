@@ -1,12 +1,15 @@
 <template>
     <div id="app">
         <img alt="Vue logo" src="./assets/logo.png" />
-        <myAst></myAst>
-        <MyInput v-show="v"></MyInput>
-        <Select v-show="v" />
+        <div v-show="v">
+            <myAst></myAst>
+            <MyInput></MyInput>
+            <Select />
+            <Test></Test>
+        </div>
         <!-- <April></April> -->
         <!-- <Password /> -->
-        <HelloWorld v-show="v" msg="Welcome to Your Vue.js App" />
+        <HelloWorld msg="Welcome to Your Vue.js App" />
     </div>
 </template>
 
@@ -17,6 +20,7 @@
     // import April from './components/April'
     import MyInput from './components/myInput'
     import myAst from './components/ast'
+    import Test from './components/test.vue'
     export default {
         name: 'App',
         data() {
@@ -31,6 +35,7 @@
             // April,
             MyInput,
             myAst,
+            Test,
         },
     }
 </script>
