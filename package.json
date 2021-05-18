@@ -12,6 +12,7 @@
     "element-ui": "^2.15.1",
     "less": "^4.1.1",
     "less-loader": "7.x",
+    "sortablejs": "^1.13.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
