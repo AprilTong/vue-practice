@@ -1,7 +1,8 @@
 <template>
     <div class="hello">
         <h1>{{ msg }}</h1>
-        <aprilTong></aprilTong>
+        <myTag tag-str="测试内容"></myTag>
+        <BiReport></BiReport>
         <p>
             For a guide and recipes on how to configure / customize this project,<br />
             check out the
@@ -68,10 +69,10 @@
 </template>
 
 <script>
-    import aprilTong from 'april-tong-ui'
+    import { myTag, BiReport } from 'april-tong-ui'
     export default {
         name: 'HelloWorld',
-        components: { aprilTong },
+        components: { myTag, BiReport },
         props: {
             msg: String,
         },

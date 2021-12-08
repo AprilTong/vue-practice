@@ -6,10 +6,11 @@
             <Select />
             <myAst></myAst>
             <Formula></Formula>
+            <Move></Move>
+            <Popover></Popover>
         </template>
-        <Move></Move>
-        <Popover></Popover>
-        <HelloWorld v-show="v" msg="Welcome to Your Vue.js App" />
+        <MyTable></MyTable>
+        <HelloWorld msg="Welcome to Your Vue.js App" />
     </div>
 </template>
 
@@ -23,6 +24,8 @@
     import Formula from './components/formula'
     import Popover from './components/popover'
     import Move from './components/move'
+    import MyTable from './components/table.vue'
+
     export default {
         name: 'App',
         data() {
@@ -40,6 +43,7 @@
             Formula,
             Popover,
             Move,
+            MyTable,
         },
     }
 </script>
