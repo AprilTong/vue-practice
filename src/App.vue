@@ -1,29 +1,26 @@
 <template>
     <div id="app">
-        <img alt="Vue logo" src="./assets/logo.png" />
         <template v-if="v">
             <MyInput></MyInput>
             <Select />
             <myAst></myAst>
-            <Formula></Formula>
-            <Move></Move>
-            <Popover></Popover>
+            <MyTable></MyTable>
         </template>
-        <MyTable></MyTable>
-        <HelloWorld msg="Welcome to Your Vue.js App" />
+        <Formula></Formula>
+
+        <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     </div>
 </template>
 
 <script>
-    import HelloWorld from './components/HelloWorld.vue'
+    // import HelloWorld from './components/HelloWorld.vue'
     // import Select from './components/Select'
     // import Password from './components/Password'
     // import April from './components/April'
     import MyInput from './components/myInput'
     import myAst from './components/ast'
     import Formula from './components/formula'
-    import Popover from './components/popover'
-    import Move from './components/move'
+
     import MyTable from './components/table.vue'
 
     export default {
@@ -34,15 +31,13 @@
             }
         },
         components: {
-            HelloWorld,
+            // HelloWorld,
             // Select,
             // Password,
             // April,
             MyInput,
             myAst,
             Formula,
-            Popover,
-            Move,
             MyTable,
         },
     }
